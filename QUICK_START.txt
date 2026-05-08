@@ -1,0 +1,210 @@
+================================================================================
+DEAL FORENSICS DASHBOARD — QUICK START CARD
+================================================================================
+
+STEP 1: INSTALL
+  cd "D:\Claude Code\Deal Forensics\dashboard"
+  npm install
+
+STEP 2: CONFIGURE
+  cp .env.example .env.local
+  (No changes needed — already has Supabase credentials)
+
+STEP 3: RUN
+  npm run dev
+
+STEP 4: VISIT
+  http://localhost:3000
+
+================================================================================
+WHAT YOU'LL SEE
+================================================================================
+
+Dashboard with 4 sections:
+
+1. KEY METRICS (4 cards)
+   • Total Decisions: 1,193
+   • Date Range: Apr 2025 to May 2026
+   • Decision Chains: 10
+   • Monthly Average: ~92
+
+2. FILTERS
+   • Date Range slider (from/to dates)
+   • Decision Type dropdown (10 types)
+   • Chain Status filter
+
+3. CHARTS (5 visualizations)
+   • Monthly Volume Bar Chart
+   • Category Trends Stacked Area
+   • Timeline Scatter Plot
+   • Decision Chain Gantt
+   • Summary Table
+
+================================================================================
+10 DECISION TYPES
+================================================================================
+
+Color-coded in all charts:
+
+1. Site Evaluation       (297) Purple
+2. Operational          (267) Amber
+3. Process/Systems      (144) Green
+4. Planning/Strategy    (120) Blue
+5. Admin/Other           (90) Gray
+6. Regulatory/Legal      (69) Red
+7. Lease/Real Estate     (73) Pink
+8. Financial             (59) Orange
+9. Facility/Infrastructure (38) Teal
+10. Governance           (36) Indigo
+
+================================================================================
+PROJECT FILES
+================================================================================
+
+Core Application:
+  app/page.tsx             Main dashboard (230 lines)
+  app/layout.tsx           Navigation & layout
+  app/globals.css          Tailwind styles
+
+6 Reusable Components:
+  components/MetricsCard.tsx              KPI cards
+  components/MonthlyVolumeChart.tsx       Bar chart
+  components/DecisionCategoryTrends.tsx   Stacked area
+  components/DecisionTimelineScatter.tsx  Scatter plot
+  components/DecisionChainGantt.tsx       Gantt timeline
+  components/LoadingSpinner.tsx           Loading state
+
+Data & Types:
+  lib/supabase.ts         Supabase client setup
+  lib/data.ts             Query & aggregation functions
+
+Configuration:
+  package.json, tsconfig.json, next.config.js
+  tailwind.config.ts, postcss.config.js
+  .env.example, .gitignore
+
+Documentation:
+  README.md               Overview & features
+  SETUP.md                Installation guide
+  ARCHITECTURE.md         Design & data flow
+  COMPONENT_GUIDE.md      Component details
+  INDEX.md                Project navigation
+
+================================================================================
+USEFUL COMMANDS
+================================================================================
+
+Development:
+  npm run dev             Start with hot reload
+  npm run build           Create production bundle
+  npm start               Run production build
+  npm run type-check      Verify TypeScript
+  npm run lint            Run ESLint
+
+Deployment:
+  vercel deploy --prod    Deploy to Vercel
+  npm run build && npm start   Test production locally
+
+================================================================================
+DATA AT A GLANCE
+================================================================================
+
+Source: Supabase (orchestrator project)
+Table: deal_forensics
+Records: 1,193 decisions
+Period: April 24, 2025 to May 7, 2026
+Chains: 10 meta-decision groups
+
+Key insight: National Portfolio chain has 176+ decisions
+(The central bottleneck visible in Gantt chart)
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+No data shows:
+  → Check .env.local has Supabase credentials
+  → Verify network tab has successful API calls
+  → Check browser console for errors
+
+Charts missing:
+  → Reload page (Ctrl+R)
+  → Clear browser cache
+  → Check DevTools Console for Recharts errors
+
+Build errors:
+  → rm -rf node_modules && npm install
+  → npm run type-check (verify TypeScript)
+
+================================================================================
+ENVIRONMENT VARIABLES
+================================================================================
+
+Already in .env.example (no changes needed):
+
+  NEXT_PUBLIC_SUPABASE_URL=https://shluyjyhbrttwqfriemc.supabase.co
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_iCSRbK5xL7uHCaa1JtG6Eg_hcxGn1r0
+
+Source: orchestrator-supabase project
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Run npm install
+2. Run npm run dev
+3. Visit http://localhost:3000
+4. Explore each chart
+5. Try filtering by date/type
+6. Read README.md for features
+7. Check ARCHITECTURE.md for design
+8. Deploy to Vercel when ready
+
+For detailed instructions, see SETUP.md or README.md
+
+================================================================================
+TECH STACK
+================================================================================
+
+Framework:  Next.js 14 with App Router
+Language:   TypeScript 5.3
+UI:         React 18.3
+Charts:     Recharts 2.12
+Styles:     Tailwind CSS 3.4
+Database:   Supabase PostgreSQL
+Dates:      date-fns 3.0
+Package:    npm
+
+Browser:    Chrome, Firefox, Safari (latest 2 versions)
+Node:       18+ recommended
+
+================================================================================
+SUPPORT
+================================================================================
+
+Quick Reference:    This file (QUICK_START.txt)
+Overview:          README.md
+Installation:      SETUP.md
+Architecture:      ARCHITECTURE.md
+Components:        COMPONENT_GUIDE.md
+Navigation:        INDEX.md
+
+Recharts Docs:     https://recharts.org/
+Next.js Docs:      https://nextjs.org/docs
+Tailwind Docs:     https://tailwindcss.com/docs
+Supabase Docs:     https://supabase.com/docs
+
+================================================================================
+STATUS
+================================================================================
+
+✓ Project Complete
+✓ Ready for Local Development
+✓ All Dependencies Listed
+✓ Environment Configured
+✓ Documentation Complete
+
+Next: npm install
+
+Created: May 8, 2026
+================================================================================

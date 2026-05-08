@@ -1,0 +1,26 @@
+// This file shows the complete page.tsx implementation with all components integrated
+
+'use client';
+
+import { useEffect, useState } from 'react';
+import { MetricsCard } from '@/components/MetricsCard';
+import { MonthlyVolumeChart } from '@/components/MonthlyVolumeChart';
+import { DecisionCategoryTrends } from '@/components/DecisionCategoryTrends';
+import { DecisionTimelineScatter } from '@/components/DecisionTimelineScatter';
+import { DecisionChainGantt } from '@/components/DecisionChainGantt';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
+
+// Component flow:
+// 1. Load all data in parallel (summary, monthly, timeline, chains, composition)
+// 2. Display key metrics at the top
+// 3. Show filter section for interactivity
+// 4. Render 5 main visualizations + summary table
+// 5. Apply filters to timeline and chains
+//
+// Data dependencies:
+// - MetricsCard depends on DecisionSummary
+// - MonthlyVolumeChart depends on MonthlyVolume[]
+// - DecisionCategoryTrends depends on composition data
+// - DecisionTimelineScatter depends on filtered DecisionRecord[]
+// - DecisionChainGantt depends on filtered DecisionChain[]
+// - Summary table depends on DecisionSummary[]

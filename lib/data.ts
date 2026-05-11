@@ -9,7 +9,8 @@ export async function getDecisionsSummary(): Promise<DecisionSummary[]> {
     .from('deal_forensics')
     .select('type, date_first_asked')
     .not('type', 'is', null)
-    .not('date_first_asked', 'is', null);
+    .not('date_first_asked', 'is', null)
+    .limit(2000);
 
   if (error) {
     console.error('Error fetching decisions summary:', error);
@@ -39,7 +40,8 @@ export async function getMonthlyVolume(): Promise<MonthlyVolume[]> {
   const { data, error } = await supabase
     .from('deal_forensics')
     .select('date_first_asked')
-    .not('date_first_asked', 'is', null);
+    .not('date_first_asked', 'is', null)
+    .limit(2000);
 
   if (error) {
     console.error('Error fetching monthly volume:', error);
@@ -105,7 +107,8 @@ export async function getDecisionChains(): Promise<DecisionChain[]> {
   const { data, error } = await supabase
     .from('deal_forensics')
     .select('meta_decision_id, meta_decision_description, type, status, date_first_asked, location')
-    .not('meta_decision_id', 'is', null);
+    .not('meta_decision_id', 'is', null)
+    .limit(2000);
 
   if (error) {
     console.error('Error fetching decision chains:', error);
@@ -158,8 +161,7 @@ export async function getDecisionTypeComposition(): Promise<Array<{ month: strin
     .select('date_first_asked, type')
     .not('date_first_asked', 'is', null)
     .not('type', 'is', null)
-    .gte('date_first_asked', '2025-04-24')
-    .lte('date_first_asked', '2026-05-31');
+    .limit(2000);
 
   if (error) {
     console.error('Error fetching composition data:', error);

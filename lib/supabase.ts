@@ -23,6 +23,10 @@ export type DecisionRecord = {
   meta_decision_id: string;
   decision_sequence_num: number;
   meta_decision_description: string;
+  departments?: string[];
+  outcome?: string;
+  user_notes?: string;
+  related_rebl_sites?: string[];
 };
 
 export type DecisionSummary = {

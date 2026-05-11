@@ -104,12 +104,18 @@ export default function Dashboard() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Navigation */}
-      <div className="mb-8 flex gap-4">
+      <div className="mb-8 flex gap-4 flex-wrap">
+        <a
+          href="/reviewer"
+          className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium"
+        >
+          📝 Review & Annotate Decisions
+        </a>
         <a
           href="/organizer"
           className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
         >
-          → Organize Meta-Decisions
+          📊 Organize Meta-Decisions
         </a>
       </div>
 

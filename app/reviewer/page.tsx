@@ -10,7 +10,8 @@ const OUTCOMES = ['approval', 'rejection', 'escalation', 'policy-change', 'infor
 
 interface ReblSite {
   site_id: string;
-  status: string;
+  systems: Record<string, string | null>;
+  systemsFormatted: string;
 }
 
 export default function ReviewerPage() {
@@ -69,15 +70,46 @@ export default function ReviewerPage() {
       // Fetch REBL sites from separate REBL project
       const { data: reblData, error: reblError } = await supabaseRebl
         .from('rebl3_status')
-        .select('site_id, status')
-        .range(0, 500);
+        .select('site_id, system, status')
+        .range(0, 2000);
 
       if (reblError) {
         console.warn('Could not fetch REBL sites:', reblError);
       } else {
-        const sortedSites = ((reblData || []) as ReblSite[]).sort((a, b) =>
-          a.site_id.localeCompare(b.site_id)
-        );
+        // Group by site_id and collect all systems
+        const sitesMap = new Map<string, Record<string, string | null>>();
+
+        (reblData || []).forEach((row: any) => {
+          if (!sitesMap.has(row.site_id)) {
+            sitesMap.set(row.site_id, {
+              strategy: null,
+              loi: null,
+              leasing: null,
+              'due-diligence': null,
+              parents: null,
+            });
+          }
+          const systems = sitesMap.get(row.site_id)!;
+          if (row.system) {
+            systems[row.system] = row.status || null;
+          }
+        });
+
+        // Convert to sorted array with formatted strings
+        const sortedSites = Array.from(sitesMap.entries())
+          .map(([site_id, systems]) => {
+            const systemsArray = ['strategy', 'loi', 'leasing', 'due-diligence', 'parents'];
+            const formatted = systemsArray
+              .map((sys) => `${sys}:${systems[sys] || 'null'}`)
+              .join(', ');
+            return {
+              site_id,
+              systems,
+              systemsFormatted: formatted,
+            };
+          })
+          .sort((a, b) => a.site_id.localeCompare(b.site_id));
+
         setReblSites(sortedSites);
       }
 
@@ -420,7 +452,7 @@ export default function ReviewerPage() {
                         />
                         <div className="flex-1">
                           <p className="text-sm font-medium text-gray-900">{site.site_id}</p>
-                          <p className="text-xs text-gray-500">{site.status}</p>
+                          <p className="text-xs font-mono text-gray-500">{site.systemsFormatted}</p>
                         </div>
                       </label>
                     ))}

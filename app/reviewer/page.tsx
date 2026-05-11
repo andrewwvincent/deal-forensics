@@ -30,6 +30,7 @@ export default function ReviewerPage() {
   const [userNotes, setUserNotes] = useState('');
   const [selectedReblSites, setSelectedReblSites] = useState<Set<string>>(new Set());
   const [newReblSiteInput, setNewReblSiteInput] = useState('');
+  const [reblSiteSearch, setReblSiteSearch] = useState('');
 
   useEffect(() => {
     loadData();
@@ -74,7 +75,10 @@ export default function ReviewerPage() {
       if (reblError) {
         console.warn('Could not fetch REBL sites:', reblError);
       } else {
-        setReblSites((reblData || []) as ReblSite[]);
+        const sortedSites = ((reblData || []) as ReblSite[]).sort((a, b) =>
+          a.site_id.localeCompare(b.site_id)
+        );
+        setReblSites(sortedSites);
       }
 
       // Load current decision's annotations
@@ -379,33 +383,48 @@ export default function ReviewerPage() {
             )}
 
             {/* Browse from list */}
-            <div className="space-y-2 max-h-48 overflow-y-auto border-t border-gray-200 pt-4">
+            <div className="space-y-2 border-t border-gray-200 pt-4">
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Search REBL sites..."
+                  value={reblSiteSearch}
+                  onChange={(e) => setReblSiteSearch(e.target.value)}
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                />
+              </div>
               <p className="text-xs font-semibold text-gray-600 uppercase">Browse REBL Sites:</p>
               {reblSites.length === 0 ? (
                 <p className="text-sm text-gray-500">No REBL sites available</p>
               ) : (
-                reblSites.map((site) => (
-                  <label key={site.site_id} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded">
-                    <input
-                      type="checkbox"
-                      checked={selectedReblSites.has(site.site_id)}
-                      onChange={(e) => {
-                        const updated = new Set(selectedReblSites);
-                        if (e.target.checked) {
-                          updated.add(site.site_id);
-                        } else {
-                          updated.delete(site.site_id);
-                        }
-                        setSelectedReblSites(updated);
-                      }}
-                      className="w-4 h-4"
-                    />
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-900">{site.site_id}</p>
-                      <p className="text-xs text-gray-500">{site.status}</p>
-                    </div>
-                  </label>
-                ))
+                <div className="max-h-48 overflow-y-auto">
+                  {reblSites
+                    .filter((site) =>
+                      site.site_id.toLowerCase().includes(reblSiteSearch.toLowerCase())
+                    )
+                    .map((site) => (
+                      <label key={site.site_id} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded">
+                        <input
+                          type="checkbox"
+                          checked={selectedReblSites.has(site.site_id)}
+                          onChange={(e) => {
+                            const updated = new Set(selectedReblSites);
+                            if (e.target.checked) {
+                              updated.add(site.site_id);
+                            } else {
+                              updated.delete(site.site_id);
+                            }
+                            setSelectedReblSites(updated);
+                          }}
+                          className="w-4 h-4"
+                        />
+                        <div className="flex-1">
+                          <p className="text-sm font-medium text-gray-900">{site.site_id}</p>
+                          <p className="text-xs text-gray-500">{site.status}</p>
+                        </div>
+                      </label>
+                    ))}
+                </div>
               )}
             </div>
           </div>

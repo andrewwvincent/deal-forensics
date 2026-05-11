@@ -13,16 +13,28 @@ interface DecisionTimelineScatterProps {
 
 export function DecisionTimelineScatter({ data, loading }: DecisionTimelineScatterProps) {
   const scatterData = useMemo(() => {
-    return data
-      .filter((d) => d.date_first_asked && d.type)
-      .map((d) => ({
-        x: parseISO(d.date_first_asked).getTime(),
-        y: Object.keys(DECISION_COLORS).indexOf(d.type),
-        type: d.type,
-        date: d.date_first_asked,
-        location: d.location || 'Unknown',
-        title: d.title || 'Untitled',
-      }));
+    const filtered = data.filter((d) => d.date_first_asked && d.type);
+    console.log('DecisionTimelineScatter received data count:', filtered.length);
+
+    const mapped = filtered.map((d) => ({
+      x: parseISO(d.date_first_asked).getTime(),
+      y: Object.keys(DECISION_COLORS).indexOf(d.type),
+      type: d.type,
+      date: d.date_first_asked,
+      location: d.location || 'Unknown',
+      title: d.title || 'Untitled',
+    }));
+
+    if (mapped.length > 0) {
+      const xValues = mapped.map(m => m.x);
+      const minX = Math.min(...xValues);
+      const maxX = Math.max(...xValues);
+      console.log('X-axis range (ms):', minX, '-', maxX);
+      console.log('X-axis range (dates):', new Date(minX), '-', new Date(maxX));
+      console.log('First 3 records:', mapped.slice(0, 3));
+    }
+
+    return mapped;
   }, [data]);
 
   if (loading) {

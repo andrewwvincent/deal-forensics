@@ -6,7 +6,7 @@ import type { DecisionRecord } from '@/lib/supabase';
 import { ChevronLeft, ChevronRight, Save, AlertCircle } from 'lucide-react';
 
 const DEPARTMENTS = ['Ops', 'Finance', 'Legal', 'Marketing', 'RE'];
-const OUTCOMES = ['approval', 'rejection', 'escalation', 'policy-change', 'information-gathering'];
+const OUTCOMES = ['approval', 'rejection', 'escalation', 'policy-change', 'information-gathering', 'pending'];
 
 interface ReblSite {
   site_id: string;
@@ -27,6 +27,7 @@ export default function ReviewerPage() {
   const [selectedOutcome, setSelectedOutcome] = useState('');
   const [userNotes, setUserNotes] = useState('');
   const [selectedReblSites, setSelectedReblSites] = useState<Set<string>>(new Set());
+  const [newReblSiteInput, setNewReblSiteInput] = useState('');
 
   useEffect(() => {
     loadData();
@@ -286,7 +287,66 @@ export default function ReviewerPage() {
           {/* REBL Sites */}
           <div>
             <label className="block text-sm font-semibold text-gray-900 mb-3">Related REBL Sites</label>
-            <div className="space-y-2 max-h-48 overflow-y-auto">
+
+            {/* Add new site ID */}
+            <div className="mb-4 flex gap-2">
+              <input
+                type="text"
+                placeholder="Type site_id (e.g., 1201-spyglass-dr-austin-tx)"
+                value={newReblSiteInput}
+                onChange={(e) => setNewReblSiteInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && newReblSiteInput.trim()) {
+                    const updated = new Set(selectedReblSites);
+                    updated.add(newReblSiteInput.trim());
+                    setSelectedReblSites(updated);
+                    setNewReblSiteInput('');
+                  }
+                }}
+                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+              />
+              <button
+                onClick={() => {
+                  if (newReblSiteInput.trim()) {
+                    const updated = new Set(selectedReblSites);
+                    updated.add(newReblSiteInput.trim());
+                    setSelectedReblSites(updated);
+                    setNewReblSiteInput('');
+                  }
+                }}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+              >
+                Add
+              </button>
+            </div>
+
+            {/* Selected sites */}
+            {selectedReblSites.size > 0 && (
+              <div className="mb-4 space-y-2">
+                <p className="text-xs font-semibold text-gray-600 uppercase">Selected Sites:</p>
+                <div className="flex flex-wrap gap-2">
+                  {Array.from(selectedReblSites).map((siteId) => (
+                    <div key={siteId} className="inline-flex items-center gap-2 bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm">
+                      <span>{siteId}</span>
+                      <button
+                        onClick={() => {
+                          const updated = new Set(selectedReblSites);
+                          updated.delete(siteId);
+                          setSelectedReblSites(updated);
+                        }}
+                        className="text-blue-600 hover:text-blue-900 font-bold"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Browse from list */}
+            <div className="space-y-2 max-h-48 overflow-y-auto border-t border-gray-200 pt-4">
+              <p className="text-xs font-semibold text-gray-600 uppercase">Browse REBL Sites:</p>
               {reblSites.length === 0 ? (
                 <p className="text-sm text-gray-500">No REBL sites available</p>
               ) : (

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import { supabase, supabaseRebl } from '@/lib/supabase';
 import type { DecisionRecord } from '@/lib/supabase';
 import { ChevronLeft, ChevronRight, Save, AlertCircle } from 'lucide-react';
 
@@ -65,8 +65,8 @@ export default function ReviewerPage() {
       setDecisions(filtered);
       setCurrentIndex(0);
 
-      // Fetch REBL sites
-      const { data: reblData, error: reblError } = await supabase
+      // Fetch REBL sites from separate REBL project
+      const { data: reblData, error: reblError } = await supabaseRebl
         .from('rebl3_status')
         .select('site_id, status')
         .range(0, 500);

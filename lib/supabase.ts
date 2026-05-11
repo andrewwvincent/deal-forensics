@@ -3,7 +3,11 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://shluyjyhbrttwqfriemc.supabase.co';
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_iCSRbK5xL7uHCaa1JtG6Eg_hcxGn1r0';
 
+const reblUrl = 'https://mnxgkozrutvylzeogphh.supabase.co';
+const reblAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ueGdrb3pydXR2eWx6ZW9ncGhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkxNTM3MjUsImV4cCI6MjA2NDcyOTcyNX0.SAxTY42F5W_XdA6p7g5fnlunu0yGzNacoBXWTmNj4is';
+
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabaseRebl = createClient(reblUrl, reblAnonKey);
 
 export type DecisionRecord = {
   id: string;

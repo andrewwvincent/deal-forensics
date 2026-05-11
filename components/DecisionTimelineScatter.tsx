@@ -47,6 +47,11 @@ export function DecisionTimelineScatter({ data, loading }: DecisionTimelineScatt
 
   const typeLabels = Object.keys(DECISION_COLORS);
 
+  // Calculate domain to avoid auto-scaling issues
+  const domain = scatterData.length > 0
+    ? [Math.min(...scatterData.map(d => d.x)), Math.max(...scatterData.map(d => d.x))]
+    : [0, 1];
+
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Decision Timeline by Type</h3>
@@ -56,6 +61,7 @@ export function DecisionTimelineScatter({ data, loading }: DecisionTimelineScatt
           <XAxis
             dataKey="x"
             type="number"
+            domain={domain}
             tickFormatter={(value) => format(new Date(value), 'MMM yyyy')}
             angle={-45}
             textAnchor="end"

@@ -70,7 +70,8 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     .from('deal_forensics')
     .select('*')
     .not('date_first_asked', 'is', null)
-    .order('date_first_asked', { ascending: true });
+    .order('date_first_asked', { ascending: true })
+    .limit(2000);
 
   if (error) {
     console.error('Error fetching timeline:', error);

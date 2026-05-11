@@ -70,6 +70,8 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     .from('deal_forensics')
     .select('*')
     .not('date_first_asked', 'is', null)
+    .gte('date_first_asked', '2025-04-24')
+    .lte('date_first_asked', '2026-05-31')
     .order('date_first_asked', { ascending: true })
     .limit(1000);
 
@@ -78,11 +80,12 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     return [];
   }
 
-  // Filter out records with invalid dates (epoch dates like 1969-1970)
+  // Additional client-side validation
   const validRecords = (data as DecisionRecord[]).filter((record) => {
     if (!record.date_first_asked) return false;
     const date = new Date(record.date_first_asked);
-    return date.getFullYear() >= 2025 && date.getFullYear() <= 2026 && !isNaN(date.getTime());
+    const year = date.getFullYear();
+    return year >= 2025 && year <= 2026 && !isNaN(date.getTime());
   });
 
   return validRecords || [];
@@ -144,7 +147,9 @@ export async function getDecisionTypeComposition(): Promise<Array<{ month: strin
     .from('deal_forensics')
     .select('date_first_asked, type')
     .not('date_first_asked', 'is', null)
-    .not('type', 'is', null);
+    .not('type', 'is', null)
+    .gte('date_first_asked', '2025-04-24')
+    .lte('date_first_asked', '2026-05-31');
 
   if (error) {
     console.error('Error fetching composition data:', error);
@@ -158,9 +163,9 @@ export async function getDecisionTypeComposition(): Promise<Array<{ month: strin
 
   data.forEach((record) => {
     const date = new Date(record.date_first_asked);
+    const year = date.getFullYear();
 
-    // Filter out invalid dates (epoch dates like 1969-1970)
-    if (date.getFullYear() < 2025 || date.getFullYear() > 2026 || isNaN(date.getTime())) {
+    if (year < 2025 || year > 2026 || isNaN(date.getTime())) {
       return;
     }
 
@@ -174,13 +179,20 @@ export async function getDecisionTypeComposition(): Promise<Array<{ month: strin
     typeMap.set(record.type, (typeMap.get(record.type) || 0) + 1);
   });
 
-  // Convert to array format and sort chronologically by actual date
+  // Get all unique types for consistent ordering across all months
+  const allTypes = new Set<string>();
+  Array.from(monthlyComposition.values()).forEach(({ types }) => {
+    types.forEach((_, type) => allTypes.add(type));
+  });
+  const typeOrder = Array.from(allTypes).sort();
+
+  // Convert to array format, sort chronologically, and ensure all types present in each month
   return Array.from(monthlyComposition.entries())
     .sort((a, b) => a[1].date.getTime() - b[1].date.getTime())
     .map(([month, { types }]) => {
       const obj: { month: string; [key: string]: number | string } = { month };
-      types.forEach((count, type) => {
-        obj[type] = count;
+      typeOrder.forEach((type) => {
+        obj[type] = types.get(type) || 0;
       });
       return obj;
     });

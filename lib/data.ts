@@ -80,6 +80,12 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     return [];
   }
 
+  console.log('Raw timeline data count:', data?.length);
+  if (data && data.length > 0) {
+    console.log('First record date:', data[0].date_first_asked);
+    console.log('Last record date:', data[data.length - 1].date_first_asked);
+  }
+
   // Additional client-side validation
   const validRecords = (data as DecisionRecord[]).filter((record) => {
     if (!record.date_first_asked) return false;
@@ -87,6 +93,12 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     const year = date.getFullYear();
     return year >= 2025 && year <= 2026 && !isNaN(date.getTime());
   });
+
+  console.log('Valid records after filtering:', validRecords.length);
+  if (validRecords.length > 0) {
+    const years = validRecords.map(r => new Date(r.date_first_asked).getFullYear());
+    console.log('Year range in valid records:', Math.min(...years), '-', Math.max(...years));
+  }
 
   return validRecords || [];
 }

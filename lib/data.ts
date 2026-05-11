@@ -78,7 +78,14 @@ export async function getDecisionsTimeline(): Promise<DecisionRecord[]> {
     return [];
   }
 
-  return (data as DecisionRecord[]) || [];
+  // Filter out records with invalid dates (epoch dates like 1969-1970)
+  const validRecords = (data as DecisionRecord[]).filter((record) => {
+    if (!record.date_first_asked) return false;
+    const date = new Date(record.date_first_asked);
+    return date.getFullYear() >= 2025 && date.getFullYear() <= 2026 && !isNaN(date.getTime());
+  });
+
+  return validRecords || [];
 }
 
 export async function getDecisionChains(): Promise<DecisionChain[]> {
@@ -146,24 +153,31 @@ export async function getDecisionTypeComposition(): Promise<Array<{ month: strin
 
   const monthlyComposition = new Map<
     string,
-    Map<string, number>
+    { date: Date; types: Map<string, number> }
   >();
 
   data.forEach((record) => {
     const date = new Date(record.date_first_asked);
+
+    // Filter out invalid dates (epoch dates like 1969-1970)
+    if (date.getFullYear() < 2025 || date.getFullYear() > 2026 || isNaN(date.getTime())) {
+      return;
+    }
+
     const monthKey = format(date, 'MMM yyyy');
 
     if (!monthlyComposition.has(monthKey)) {
-      monthlyComposition.set(monthKey, new Map());
+      monthlyComposition.set(monthKey, { date, types: new Map() });
     }
 
-    const typeMap = monthlyComposition.get(monthKey)!;
+    const typeMap = monthlyComposition.get(monthKey)!.types;
     typeMap.set(record.type, (typeMap.get(record.type) || 0) + 1);
   });
 
-  // Convert to array format for Recharts stacked area
+  // Convert to array format and sort chronologically by actual date
   return Array.from(monthlyComposition.entries())
-    .map(([month, types]) => {
+    .sort((a, b) => a[1].date.getTime() - b[1].date.getTime())
+    .map(([month, { types }]) => {
       const obj: { month: string; [key: string]: number | string } = { month };
       types.forEach((count, type) => {
         obj[type] = count;

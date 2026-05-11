@@ -27,6 +27,7 @@ export type DecisionRecord = {
   outcome?: string;
   user_notes?: string;
   related_rebl_sites?: string[];
+  reviewed_at?: string | null;
 };
 
 export type DecisionSummary = {

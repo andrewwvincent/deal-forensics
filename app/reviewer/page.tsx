@@ -15,12 +15,14 @@ interface ReblSite {
 
 export default function ReviewerPage() {
   const [decisions, setDecisions] = useState<DecisionRecord[]>([]);
+  const [allDecisions, setAllDecisions] = useState<DecisionRecord[]>([]);
   const [reblSites, setReblSites] = useState<ReblSite[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [filterLocation, setFilterLocation] = useState('');
+  const [showUnreviewedOnly, setShowUnreviewedOnly] = useState(true);
 
   // Local state for current decision annotation
   const [selectedDepts, setSelectedDepts] = useState<Set<string>>(new Set());
@@ -31,7 +33,7 @@ export default function ReviewerPage() {
 
   useEffect(() => {
     loadData();
-  }, [filterLocation]);
+  }, [filterLocation, showUnreviewedOnly]);
 
   async function loadData() {
     try {
@@ -52,7 +54,15 @@ export default function ReviewerPage() {
       const { data: decisionsData, error: decisionsError } = await query;
       if (decisionsError) throw decisionsError;
 
-      setDecisions(decisionsData as DecisionRecord[]);
+      const allDecs = decisionsData as DecisionRecord[];
+      setAllDecisions(allDecs);
+
+      // Apply reviewed filter
+      const filtered = showUnreviewedOnly
+        ? allDecs.filter((d) => !d.reviewed_at)
+        : allDecs;
+
+      setDecisions(filtered);
       setCurrentIndex(0);
 
       // Fetch REBL sites
@@ -101,6 +111,7 @@ export default function ReviewerPage() {
           outcome: selectedOutcome || null,
           user_notes: userNotes || null,
           related_rebl_sites: Array.from(selectedReblSites),
+          reviewed_at: new Date().toISOString(),
         })
         .eq('id', current.id)
         .select();
@@ -122,6 +133,7 @@ export default function ReviewerPage() {
         outcome: selectedOutcome || '',
         user_notes: userNotes,
         related_rebl_sites: Array.from(selectedReblSites),
+        reviewed_at: new Date().toISOString(),
       };
       setDecisions(updated);
 
@@ -130,7 +142,9 @@ export default function ReviewerPage() {
         setCurrentIndex(currentIndex + 1);
         loadDecisionAnnotations(updated[currentIndex + 1]);
       } else {
-        alert('Reached end of decisions!');
+        const reviewedCount = allDecisions.filter((d) => d.reviewed_at).length;
+        const unreviewed = allDecisions.filter((d) => !d.reviewed_at).length;
+        alert(`Finished! ${reviewedCount} reviewed, ${unreviewed} remaining.`);
       }
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Failed to save';
@@ -159,6 +173,8 @@ export default function ReviewerPage() {
 
   const current = decisions[currentIndex];
   const progress = ((currentIndex + 1) / decisions.length) * 100;
+  const reviewedCount = allDecisions.filter((d) => d.reviewed_at).length;
+  const totalCount = allDecisions.length;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -175,24 +191,34 @@ export default function ReviewerPage() {
         </div>
       )}
 
-      {/* Filter */}
-      <div className="mb-6 flex gap-3">
+      {/* Filter and Toggle */}
+      <div className="mb-6 space-y-3">
         <input
           type="text"
           placeholder="Filter by location (leave empty for all)..."
           value={filterLocation}
           onChange={(e) => setFilterLocation(e.target.value)}
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        <label className="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={showUnreviewedOnly}
+            onChange={(e) => setShowUnreviewedOnly(e.target.checked)}
+            className="w-4 h-4"
+          />
+          <span className="text-gray-700">Show unreviewed only</span>
+        </label>
       </div>
 
       {/* Progress bar */}
       <div className="mb-6">
         <div className="flex justify-between text-sm text-gray-600 mb-2">
           <span>
-            Decision {currentIndex + 1} of {decisions.length}
+            {reviewedCount} reviewed of {totalCount} total
+            {showUnreviewedOnly && decisions.length > 0 && ` (${decisions.length} unreviewed left)`}
           </span>
-          <span>{Math.round(progress)}%</span>
+          <span>{Math.round(progress)}% of current view</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div className="bg-blue-600 h-2 rounded-full" style={{ width: `${progress}%` }}></div>

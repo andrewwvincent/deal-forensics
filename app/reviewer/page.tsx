@@ -43,7 +43,7 @@ export default function ReviewerPage() {
         .from('deal_forensics')
         .select('*')
         .order('date_first_asked', { ascending: false })
-        .limit(2000);
+        .range(0, 2000);
 
       if (filterLocation) {
         query = query.ilike('location', `%${filterLocation}%`);
@@ -59,7 +59,7 @@ export default function ReviewerPage() {
       const { data: reblData, error: reblError } = await supabase
         .from('rebl3_status')
         .select('site_id, status')
-        .limit(200);
+        .range(0, 500);
 
       if (reblError) {
         console.warn('Could not fetch REBL sites:', reblError);

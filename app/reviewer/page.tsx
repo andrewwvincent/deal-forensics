@@ -94,7 +94,7 @@ export default function ReviewerPage() {
       setSaving(true);
       const current = decisions[currentIndex];
 
-      const { error } = await supabase
+      const { error, data } = await supabase
         .from('deal_forensics')
         .update({
           departments: Array.from(selectedDepts),
@@ -102,9 +102,17 @@ export default function ReviewerPage() {
           user_notes: userNotes || null,
           related_rebl_sites: Array.from(selectedReblSites),
         })
-        .eq('id', current.id);
+        .eq('id', current.id)
+        .select();
 
-      if (error) throw error;
+      if (error) {
+        console.error('Update error:', error);
+        throw error;
+      }
+
+      if (!data || data.length === 0) {
+        throw new Error('Update did not affect any rows. Check RLS policy.');
+      }
 
       // Mark this decision as saved and move to next
       const updated = [...decisions];

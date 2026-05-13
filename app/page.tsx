@@ -117,6 +117,12 @@ export default function Dashboard() {
         >
           📊 Organize Meta-Decisions
         </a>
+        <a
+          href="/reviewer/ambiguous"
+          className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium"
+        >
+          🔗 Resolve Ambiguous REBL Matches
+        </a>
       </div>
 
       {/* Key Metrics */}

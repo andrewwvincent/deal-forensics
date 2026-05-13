@@ -1,0 +1,1125 @@
+{
+  "count": 81,
+  "generated": "2026-05-13T13:05:23.786Z",
+  "matches": [
+    {
+      "id": "d-20250612-001",
+      "location": "Fort Worth",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "20260507-011",
+      "location": "Miami Beach Beaux Arts",
+      "sites": [
+        "1021-biarritz-dr-miami-beach-fl",
+        "1311-15th-ter-miami-beach-fl",
+        "1995-calais-miami-beach-miami-beach-fl",
+        "300-71st-miami-beach-fl",
+        "400-71st-st-miami-beach-fl",
+        "8-10-century-ln-miami-beach-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250522-003",
+      "location": "Tampa, Florida",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-002",
+      "location": "New York (Insurance Coverage)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-003",
+      "location": "New York (Outdoor Play Space)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-004",
+      "location": "Florida (Tampa)",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250902-013",
+      "location": "New York (Maiden Lane)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "20260428-003",
+      "location": "150 West (New York)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "2731-pinewood-ave-west-palm-beach-fl",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "20260428-004",
+      "location": "Upper East Side (New York)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "44-woods-ln-east-hampton-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "20260428-005",
+      "location": "Upper West Side / Maiden Lane (New York)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "2731-pinewood-ave-west-palm-beach-fl",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "20260428-006",
+      "location": "Maiden Lane South side (New York)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250911-001",
+      "location": "New York (Homeschool Forms)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250911-003",
+      "location": "New York (Insurance)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250911-013",
+      "location": "San Francisco (Sept 16 Event)",
+      "sites": [
+        "1-beach-st-san-francisco-ca",
+        "1309-howard-st-san-francisco-ca",
+        "201-spear-st-san-francisco-ca",
+        "3741-buchanan-st-san-francisco-ca",
+        "45-fremont-st-san-francisco-ca",
+        "499-illinois-st-san-francisco-ca",
+        "606-mission-st-san-francisco-ca",
+        "900-kearny-st-san-francisco-ca",
+        "98-battery-st-san-francisco-ca"
+      ],
+      "count": 9
+    },
+    {
+      "id": "d-20250911-028",
+      "location": "New York (Campus Strategy)",
+      "sites": [
+        "1071-camelback-st-newport-beach-ca",
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "2601-vista-del-oro-newport-beach-ca",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny",
+        "8086-e-coast-hwy-newport-beach-ca"
+      ],
+      "count": 9
+    },
+    {
+      "id": "d-20250916-011",
+      "location": "New York (High school)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250918-012",
+      "location": "New York (Homeschool Compliance)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250923-005",
+      "location": "New York (Broker Strategy)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250923-023",
+      "location": "Puerto Rico / Park City / Other Sites",
+      "sites": [
+        "1-victory-ln-park-city-ut",
+        "3770-ut-224-park-city-ut",
+        "639-main-st-park-city-ut",
+        "6546-n-landmark-dr-park-city-ut",
+        "6699-landmark-dr-park-city-ut",
+        "7550-park-meadows-dr-lone-tree-co",
+        "890-main-st-park-city-ut"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20250925-003",
+      "location": "Los Angeles (Lease Strategy)",
+      "sites": [
+        "1062-s-robertson-blvd-los-angeles-ca",
+        "1067-s-fairfax-los-angeles-ca",
+        "1153-1163-n-highland-ave-1153-los-angeles-ca",
+        "1726-whitley-ave-los-angeles-ca",
+        "6210-wilshire-blvd-los-angeles-ca",
+        "6662-6666-hollywood-blvd-los-angeles-ca",
+        "6700-santa-monica-blvd-los-angeles-ca",
+        "8512-whitworth-dr-los-angeles-ca"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20250930-010",
+      "location": "Los Angeles (Fairfax / Main Street)",
+      "sites": [
+        "1062-s-robertson-blvd-los-angeles-ca",
+        "1067-s-fairfax-los-angeles-ca",
+        "1153-1163-n-highland-ave-1153-los-angeles-ca",
+        "1726-whitley-ave-los-angeles-ca",
+        "6210-wilshire-blvd-los-angeles-ca",
+        "6662-6666-hollywood-blvd-los-angeles-ca",
+        "6700-santa-monica-blvd-los-angeles-ca",
+        "8512-whitworth-dr-los-angeles-ca"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20250930-015",
+      "location": "Fort Worth (Guidepost)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20250930-019",
+      "location": "Park City",
+      "sites": [
+        "1-victory-ln-park-city-ut",
+        "3770-ut-224-park-city-ut",
+        "639-main-st-park-city-ut",
+        "6546-n-landmark-dr-park-city-ut",
+        "6699-landmark-dr-park-city-ut",
+        "890-main-st-park-city-ut"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-013",
+      "location": "Tampa (Florida)",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251209-010",
+      "location": "Fort Worth (Sarah expansion vs. Keller relocation)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8512-whitworth-dr-los-angeles-ca",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20251216-002",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251216-003",
+      "location": "Sarah (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251218-001",
+      "location": "Sarah (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251223-002",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251223-009",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251223-014",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251230-014",
+      "location": "NYC (new Ackman building option)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260102-005",
+      "location": "Fort Worth (Keller expansion)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260102-003",
+      "location": "Boston / Massachusetts",
+      "sites": [
+        "1310-washington-st-boston-ma",
+        "1525-washington-st-boston-ma",
+        "1833-massachusetts-ave-lexington-ma",
+        "285-lamartine-st-boston-ma",
+        "300-cambridge-st-boston-ma",
+        "567-columbus-ave-unit-c4-boston-ma"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260102-014",
+      "location": "Sarah (Fort Worth facility)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260106-021",
+      "location": "Austin (NOVA Austin)",
+      "sites": [
+        "1201-spyglass-dr-austin-tx",
+        "121-west-6th-st-austin-tx",
+        "1402-e-cesar-chavez-st-austin-tx",
+        "1609-shoal-creek-blvd-austin-tx",
+        "2611-hillview-rd-austin-tx",
+        "316-congress-ave-austin-tx",
+        "4402-hudson-bend-rd-austin-tx",
+        "500-s-congress-ave-austin-tx",
+        "504-lavaca-st-austin-tx",
+        "5440-w-hwy-290-austin-tx"
+      ],
+      "count": 10
+    },
+    {
+      "id": "d-20260106-023",
+      "location": "Austin (NOVA Austin)",
+      "sites": [
+        "1201-spyglass-dr-austin-tx",
+        "121-west-6th-st-austin-tx",
+        "1402-e-cesar-chavez-st-austin-tx",
+        "1609-shoal-creek-blvd-austin-tx",
+        "2611-hillview-rd-austin-tx",
+        "316-congress-ave-austin-tx",
+        "4402-hudson-bend-rd-austin-tx",
+        "500-s-congress-ave-austin-tx",
+        "504-lavaca-st-austin-tx",
+        "5440-w-hwy-290-austin-tx"
+      ],
+      "count": 10
+    },
+    {
+      "id": "d-20260113-011",
+      "location": "Fort Worth (Keller)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260113-018",
+      "location": "National (sports academy / Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8512-whitworth-dr-los-angeles-ca",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20260212-010",
+      "location": "Miami Beach (billionaire developer)",
+      "sites": [
+        "1021-biarritz-dr-miami-beach-fl",
+        "1311-15th-ter-miami-beach-fl",
+        "1995-calais-miami-beach-miami-beach-fl",
+        "300-71st-miami-beach-fl",
+        "400-71st-st-miami-beach-fl",
+        "8-10-century-ln-miami-beach-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260121-009",
+      "location": "Fort Worth (Keller vs Sarah)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251212-002",
+      "location": "Fort Worth (Keller Roof Snow)",
+      "sites": [
+        "1750-rufe-snow-dr-keller-tx",
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20250911-022",
+      "location": "Park City (Utah)",
+      "sites": [
+        "1-victory-ln-park-city-ut",
+        "3770-ut-224-park-city-ut",
+        "639-main-st-park-city-ut",
+        "6546-n-landmark-dr-park-city-ut",
+        "6699-landmark-dr-park-city-ut",
+        "890-main-st-park-city-ut"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260428-005",
+      "location": "180 Maiden Lane (South Side), New York",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260428-008",
+      "location": "New York (Multiple addresses: 156 Maiden Lane, 775 other)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260428-002",
+      "location": "150 West Circle, New York",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "2731-pinewood-ave-west-palm-beach-fl",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260428-009",
+      "location": "Multiple (Founders High School Program: NYC, Miami, San Francisco, Austin)",
+      "sites": [
+        "1-beach-st-san-francisco-ca",
+        "1309-howard-st-san-francisco-ca",
+        "201-spear-st-san-francisco-ca",
+        "3741-buchanan-st-san-francisco-ca",
+        "45-fremont-st-san-francisco-ca",
+        "499-illinois-st-san-francisco-ca",
+        "606-mission-st-san-francisco-ca",
+        "900-kearny-st-san-francisco-ca",
+        "98-battery-st-san-francisco-ca"
+      ],
+      "count": 9
+    },
+    {
+      "id": "d-20260319-003",
+      "location": "Multiple (Boca Raton, Brentwood/Nashville, Portland)",
+      "sites": [
+        "139-nw-3rd-st-boca-raton-fl",
+        "1515-n-federal-hwy-boca-raton-fl",
+        "170-nw-20th-st-boca-raton-fl",
+        "2100-north-dixie-hwy-boca-raton-fl",
+        "2200-nw-5th-ave-boca-raton-fl",
+        "3060-north-federal-hwy-boca-raton-fl",
+        "6401-e-rogers-cir-boca-raton-fl"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260319-002",
+      "location": "Multiple (Boca Raton, Brentwood/Nashville, Portland)",
+      "sites": [
+        "139-nw-3rd-st-boca-raton-fl",
+        "1515-n-federal-hwy-boca-raton-fl",
+        "170-nw-20th-st-boca-raton-fl",
+        "2100-north-dixie-hwy-boca-raton-fl",
+        "2200-nw-5th-ave-boca-raton-fl",
+        "3060-north-federal-hwy-boca-raton-fl",
+        "6401-e-rogers-cir-boca-raton-fl"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260319-001",
+      "location": "Fort Worth (Keller South Lake)",
+      "sites": [
+        "150-lake-st-south-kirkland-wa",
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20260318-002",
+      "location": "Fort Worth",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20250911-023",
+      "location": "Salt Lake City (Utah)",
+      "sites": [
+        "1-victory-ln-park-city-ut",
+        "3770-ut-224-park-city-ut",
+        "639-main-st-park-city-ut",
+        "6546-n-landmark-dr-park-city-ut",
+        "6699-landmark-dr-park-city-ut",
+        "890-main-st-park-city-ut"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260226-003",
+      "location": "New York (swing space)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260409-012",
+      "location": "New York (156 Williams + 775)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20260414-006",
+      "location": "Maiden Lane (New York)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251218-007",
+      "location": "New York / 775 Columbus Circle",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251009-017",
+      "location": "New York",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-016",
+      "location": "New York / Alpha Anywhere Center",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250923-003",
+      "location": "New York",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250918-017",
+      "location": "San Francisco",
+      "sites": [
+        "1-beach-st-san-francisco-ca",
+        "1309-howard-st-san-francisco-ca",
+        "201-spear-st-san-francisco-ca",
+        "3741-buchanan-st-san-francisco-ca",
+        "45-fremont-st-san-francisco-ca",
+        "499-illinois-st-san-francisco-ca",
+        "606-mission-st-san-francisco-ca",
+        "900-kearny-st-san-francisco-ca",
+        "98-battery-st-san-francisco-ca"
+      ],
+      "count": 9
+    },
+    {
+      "id": "d-20250902-002",
+      "location": "New York / Maiden Lane",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-028",
+      "location": "New York",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-005",
+      "location": "Florida (Tampa Permitting)",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250904-012",
+      "location": "New York (Upper East/West Side Assessment)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250909-004",
+      "location": "Los Angeles (Main Street)",
+      "sites": [
+        "1062-s-robertson-blvd-los-angeles-ca",
+        "1067-s-fairfax-los-angeles-ca",
+        "1153-1163-n-highland-ave-1153-los-angeles-ca",
+        "1726-whitley-ave-los-angeles-ca",
+        "6210-wilshire-blvd-los-angeles-ca",
+        "6662-6666-hollywood-blvd-los-angeles-ca",
+        "6700-santa-monica-blvd-los-angeles-ca",
+        "8512-whitworth-dr-los-angeles-ca"
+      ],
+      "count": 8
+    },
+    {
+      "id": "d-20250911-002",
+      "location": "New York (Corlears/New Spaces)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20250916-009",
+      "location": "New York (Upper East Side)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "44-woods-ln-east-hampton-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20250916-010",
+      "location": "New York (Upper West Side)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "2731-pinewood-ave-west-palm-beach-fl",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20250925-004",
+      "location": "New York (BIS / Hudson Yards)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-012",
+      "location": "Tampa (Florida)",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-014",
+      "location": "Tampa (Florida)",
+      "sites": [
+        "1110-west-platt-st-tampa-fl",
+        "1112-e-kennedy-blvd-tampa-fl",
+        "119-s-dakota-ave-tampa-fl",
+        "2409-s-macdill-ave-tampa-fl",
+        "5252-ehrlich-rd-tampa-fl",
+        "5706-s-macdill-ave-tampa-fl"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-019",
+      "location": "New York (Alpha Anywhere Center)",
+      "sites": [
+        "150-w-85th-st-new-york-ny",
+        "156-william-st-new-york-ny",
+        "180-maiden-ln-new-york-ny",
+        "35-e-62nd-st-new-york-ny",
+        "511-w-25th-st-new-york-ny",
+        "775-columbus-ave-new-york-ny"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251002-022",
+      "location": "Park City (Utah)",
+      "sites": [
+        "1-victory-ln-park-city-ut",
+        "3770-ut-224-park-city-ut",
+        "639-main-st-park-city-ut",
+        "6546-n-landmark-dr-park-city-ut",
+        "6699-landmark-dr-park-city-ut",
+        "890-main-st-park-city-ut"
+      ],
+      "count": 6
+    },
+    {
+      "id": "d-20251028-013",
+      "location": "Fort Worth (Micro school)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251030-001",
+      "location": "Fort Worth (Second micro)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251209-007",
+      "location": "San Francisco (1000-person school)",
+      "sites": [
+        "1-beach-st-san-francisco-ca",
+        "1309-howard-st-san-francisco-ca",
+        "201-spear-st-san-francisco-ca",
+        "3741-buchanan-st-san-francisco-ca",
+        "45-fremont-st-san-francisco-ca",
+        "499-illinois-st-san-francisco-ca",
+        "606-mission-st-san-francisco-ca",
+        "900-kearny-st-san-francisco-ca",
+        "98-battery-st-san-francisco-ca"
+      ],
+      "count": 9
+    },
+    {
+      "id": "d-20251216-004",
+      "location": "Fort Worth (250-person)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251218-002",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251223-001",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20251230-002",
+      "location": "Keller (Fort Worth)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    },
+    {
+      "id": "d-20260102-013",
+      "location": "Fort Worth (Keller expansion)",
+      "sites": [
+        "2925-riverglen-dr-fort-worth-tx",
+        "3300-bryant-irvin-rd-fort-worth-tx",
+        "3400-west-fwy-fort-worth-tx",
+        "3500-marquita-dr-fort-worth-tx",
+        "4717-fletcher-ave-fort-worth-tx",
+        "5020-collinwood-ave-fort-worth-tx",
+        "8851-camp-bowie-west-blvd-fort-worth-tx"
+      ],
+      "count": 7
+    }
+  ]
+}
